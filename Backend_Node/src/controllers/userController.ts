@@ -3,7 +3,7 @@ import { User } from "../models/User";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-const JWT_SECRET = process.env.JWT_SECRET || "secret123";
+const JWT_SECRET = process.env.JWT_SECRET || "clave_super_secreta";
 
 export const registerUser = async (req: Request, res: Response) => {
   try {
